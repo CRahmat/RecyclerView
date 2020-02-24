@@ -10,24 +10,24 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView rvTeam;
-    private ArrayList<FootBallModel> list = new ArrayList<>();
+    private RecyclerView rvHeroes;
+    private ArrayList<HeroesModel> list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rvTeam = findViewById(R.id.rv_team_list);
-        rvTeam.setHasFixedSize(true);
-        list.addAll(FootBallData.getListData());
+        rvHeroes = findViewById(R.id.rv_heroesList);
+        rvHeroes.setHasFixedSize(true);
+        list.addAll(HeroesData.getHeroList());
 
         showRecyclerList();
     }
 
     private void showRecyclerList() {
-        rvTeam.setLayoutManager(new LinearLayoutManager(this));
-        FootBallAdapter footBallAdapter = new FootBallAdapter(this);
-        footBallAdapter.setFootBallModels(list);
-        rvTeam.setAdapter(footBallAdapter);
+        rvHeroes.setLayoutManager(new LinearLayoutManager(this));
+        HeroesAdapter footBallAdapter = new HeroesAdapter(this);
+        footBallAdapter.setHeroesModels(list);
+        rvHeroes.setAdapter(footBallAdapter);
     }
 }
