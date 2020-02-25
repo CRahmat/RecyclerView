@@ -29,5 +29,6 @@ public class MainActivity extends AppCompatActivity {
         HeroesAdapter footBallAdapter = new HeroesAdapter(this);
         footBallAdapter.setHeroesModels(list);
         rvHeroes.setAdapter(footBallAdapter);
+
     }
 }

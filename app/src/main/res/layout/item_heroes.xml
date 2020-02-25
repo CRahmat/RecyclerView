@@ -71,7 +71,7 @@
             >
             <Button
                 android:layout_marginTop="10dp"
-                android:id="@+id/btn_share"
+                android:id="@+id/btn_see"
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:text="Lihat"
@@ -83,12 +83,13 @@
                 >
             </Button>
             <Button
+                android:id="@+id/btn_share"
                 android:layout_marginTop="10dp"
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:background="@drawable/custom_bttn"
                 android:text="Share"
-                android:layout_toRightOf="@+id/btn_share"
+                android:layout_toRightOf="@+id/btn_see"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="#009933"
